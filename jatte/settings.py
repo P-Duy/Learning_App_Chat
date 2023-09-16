@@ -35,13 +35,14 @@ LOGOUT_REDIRECT_URL = "/"
 
 CHANNEL_LAYERS = {
     "default": {
-        "BACKEND": "channel.layer.InMemoryChannelLayer",
+        "BACKEND": "channels.layers.InMemoryChannelLayer",
     }
 }
 
 # Application definition
 
 INSTALLED_APPS = [
+    "channels",
     "daphne",
     "django.contrib.admin",
     "django.contrib.auth",
